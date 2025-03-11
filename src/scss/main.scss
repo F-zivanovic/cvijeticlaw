@@ -4,3 +4,8 @@
 @use "./base/base";
 @use "./base/helpers";
 
+@use 'layout/nav';
+@use 'layout/hero';
+@use 'layout/services';
+@use 'layout/about';
+@use 'layout/footer';

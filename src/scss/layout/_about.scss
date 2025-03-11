@@ -1,0 +1,40 @@
+@use '../abstract/index' as *;
+
+.about{
+    background-image: url('../../src/img/about-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+
+    &__wrapper{
+        @include flex(space-between, center, wrap);
+        row-gap: 2rem;
+    }
+
+    &__img{
+        position: absolute;
+        bottom: 0;
+        // border: 2px solid red;
+        height: 100%;
+        right: 10%;
+    }
+
+    &__item{
+        flex: 0 0 47%;
+    }
+
+    &__heading{
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+
+        span{
+            color: $primary-color;
+        }
+    }
+
+    &__p{
+        line-height: 2;
+    }
+}
