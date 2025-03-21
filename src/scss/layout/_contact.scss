@@ -1,0 +1,75 @@
+@use '../abstract/index' as*;
+
+.contact{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    &__heading{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__item{
+        @include flex(flex-start, stretch, column, 1rem);
+
+        &--form{ 
+            flex: 3;
+
+            label{display: block;}
+         };
+
+
+        &--info{ flex: 1.5; };
+    }
+
+    &__input,
+    textarea{
+        border: 1px solid $text-color;
+        width: 100%;
+        padding: 0.6rem;
+        margin-top: 0.2rem;
+    }
+
+    textarea{ height: 150px;}
+
+    &__btn{
+        align-self: flex-start;
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        background-color: $primary-color;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        cursor: pointer;
+        border: 2px solid $primary-color;
+        transition: 0.4s linear;
+
+        &:hover{
+            background: transparent;
+            color: $text-color;
+
+        }
+    }
+
+    span{
+        width: 30px;
+        height: 30px;
+        background-color: $primary-color;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+
+    &__link{
+        color: $text-color;
+        font-weight: 500;
+
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}

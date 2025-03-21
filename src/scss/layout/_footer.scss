@@ -12,14 +12,10 @@ $footer-text-color:#c4c4c4;
         @include flex(space-between, stretch, wrap);
         row-gap: 2rem;
 
-        @include rwd(992){
-            flex-direction: column;
-        }
+        @include rwd(992){ flex-direction: column; }
     }
 
-    &__item{
-        flex: 0 0 30%;
-    }
+    &__item{ flex: 0 0 30%; }
 
     &__title{
         text-transform: uppercase;
@@ -36,9 +32,7 @@ $footer-text-color:#c4c4c4;
             margin: 1rem 0 2rem;
         }
 
-        @include rwd(576){
-            font-size: 1.2rem;
-        }
+        @include rwd(576){ font-size: 1.2rem; }
     }
 
     &__contact{
@@ -46,13 +40,9 @@ $footer-text-color:#c4c4c4;
         display: block;
         font-size: 0.9rem;
 
-        &:hover{
-            color: $primary-color;
-        }
+        &:hover{ color: $primary-color; }
 
-        &:not(:first-child){
-            margin-top: 1rem;
-        }
+        &:not(:first-child){ margin-top: 1rem; }
 
         .fa-solid, .fa-brands {
             font-size: 1.1rem;
@@ -61,34 +51,19 @@ $footer-text-color:#c4c4c4;
         }
     }
 
-    &__links{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+    &__links,
+    &__list { @include flex(flex-start, stretch, column, 0.5rem); }
 
     &__link{
         color: $footer-text-color;
         text-transform: capitalize;
 
-        &:hover{
-            color: $primary-color;
-        }
-    }
-
-    &__list{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+        &:hover{ color: $primary-color; }
     }
 
     &__list__item{
         display: flex;
         justify-content: space-between;
-
-        .footer__day{
-            text-transform: capitalize;
-        }
     }
 
     &__copy{
@@ -101,10 +76,6 @@ $footer-text-color:#c4c4c4;
          @include rwd(576){
             flex-direction: column;
             gap: 1rem;
-        }
-
-        .footer__logo{
-            width: 50px;
         }
 
         a{

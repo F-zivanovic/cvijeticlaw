@@ -32,16 +32,16 @@
         }
     }
 
-    &__logo{
-        @include flex(flex-start, center, row, 0.5rem);
+    // &__logo{
+    //     @include flex(flex-start, center, row, 0.5rem);
 
-        img{ width: 50px; }
+    //     img{ width: 50px; }
 
-        p{
-            text-transform: capitalize;
-            color: $text-color;
-        }
-    }
+    //     p{
+    //         text-transform: capitalize;
+    //         color: $text-color;
+    //     }
+    // }
 
     &__bottom{
         padding: 1rem 0;

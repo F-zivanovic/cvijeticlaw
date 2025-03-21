@@ -1,0 +1,19 @@
+@use '../abstract/index' as *;
+
+.service{
+
+    &__text{ 
+        margin-bottom: 1rem;
+        line-height: 1.6;
+     }
+
+    &__list{
+        margin-top: 1rem;
+        list-style-type: square;
+        padding-left: 2rem;
+
+        li{
+            &:not(:last-child){ margin-bottom: 0.4rem;}
+        }
+    }
+}
