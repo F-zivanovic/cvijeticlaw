@@ -3,7 +3,7 @@
 .contact{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 
     &__heading{
         font-size: 2rem;
@@ -20,7 +20,7 @@
          };
 
 
-        &--info{ flex: 1.5; };
+        &--info{ flex: 2; };
     }
 
     &__input,
@@ -53,6 +53,12 @@
         }
     }
 
+    &__info{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
     span{
         width: 30px;
         height: 30px;
@@ -61,7 +67,6 @@
         line-height: 30px;
         text-align: center;
         font-size: 0.8rem;
-        margin-right: 0.5rem;
     }
 
     &__link{
