@@ -8,21 +8,20 @@
     position: relative;
 
     &__wrapper{
-        @include flex(space-between, center, wrap);
-        row-gap: 2rem;
+        max-width: 60%;
+        margin: 0 auto;
     }
+
 
     &__img{
         position: absolute;
         bottom: 0;
-        // border: 2px solid red;
-        height: 100%;
-        right: 10%;
+        right: 0;
+        opacity: 0.65;
+        z-index: 0;
+        // height: 500px;
     }
 
-    &__item{
-        flex: 0 0 47%;
-    }
 
     &__heading{
         font-size: 2.5rem;
@@ -34,7 +33,15 @@
         }
     }
 
-    &__p{
-        line-height: 2;
+    &__text{
+        line-height: 1.6;
+        position: relative;
+        z-index: 100;
+        text-align: justify;
+        font-weight: 500;
+
+        &:not(:last-child){
+            margin-bottom: 1rem;
+        }
     }
 }

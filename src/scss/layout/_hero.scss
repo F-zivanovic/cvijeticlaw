@@ -2,13 +2,16 @@
 
 
 .hero{
+    @include flex(flex-start, center, column);
     padding: 0;
-    background-image: url('../../src/img/hero.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../src/img/hero.jpg');
     background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    height: 90vh;
+
+    @include rwd(992){
+        justify-content: center;
+        text-align: center;
+    }
 
     &__subheading{
         color: $primary-color;
@@ -24,10 +27,20 @@
     }
 
     &__p{
-        line-height: 22px;
+        line-height: 1.7;
         color: #fff;
-        max-width: 450px;
+        max-width: 550px;
         margin: 1rem 0;
+
+        @include rwd(992){
+            margin: 1rem auto;
+            max-width: 100%;
+        }
+
+        span{
+            color: $primary-color;
+            font-weight: 700;
+        }
     }
 
     &__btn{

@@ -25,30 +25,43 @@
 <body>
 
     <!-- Nav section starts -->
-    <nav class="nav">
-        <a href="index.html" class="nav__logo">
-            <img src="src/img/logo.png" alt="website logo" class="nav__img">
-        </a>
+    <nav class="nav container">
+        
+        <div class="nav__top">
+            <div class="nav__info">
+                <div class="nav__box">
+                    <span class="fa-solid fa-phone" aria-hidden="true"></span>
+                    <a href="tel:064 35 68 399" aria-label="Pozovite nas">064 35 68 399</a>
+                </div>
+                <div class="nav__box">
+                    <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+                    <a href="mailto:tihomir.cvijetic@gmail.com" aria-label="Pošaljite nam email">tihomir.cvijetic@gmail.com</a>
+                </div>
+            </div>
 
-        <ul class="nav__list">
-            <li class="nav__list">
-                <a href="index.html" class="nav__link">početna</a>
-            </li>
-            <li class="nav__list">
-                <a href="index.html" class="nav__link">o nama</a>
-            </li>
-            <li class="nav__list">
-                <a href="index.html" class="nav__link">kontakt</a>
-            </li>
-            <li class="nav__list">
-                <a href="index.html" class="nav__link">usluge</a>
-            </li>
-            <li class="nav__list">
-                <a href="index.html" class="nav__link">blog</a>
-            </li>
-        </ul>
+            <a href="index.html" class="nav__logo">
+                <img src="src/img/logo.png" alt="Advokat Beograd">
+                <!-- <p>tihomir cvijetić</p> -->
+            </a>
 
-        <span class="fa-solid fa-bars nav__hamburger"></span>
+            <ul class="nav__list">
+                <li><a href="index.html" class="nav__link">Početna</a></li>
+                <li><a href="#about" class="nav__link">O nama</a></li>
+                <li><a href="#services" class="nav__link">Usluge</a></li>
+                <li><a href="#" class="nav__link">Blog</a></li>
+                <li><a href="#contact" class="nav__link">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="nav__bottom">
+            <ul class="nav__list nav__list--center">
+                <li><a href="#" class="nav__link">rešavanje sporova</a></li>
+                <li><a href="#" class="nav__link">izvršni postupak</a></li>
+                <li><a href="#" class="nav__link">radno pravo</a></li>
+                <li><a href="#" class="nav__link">nepokretnosti</a></li>
+                <li><a href="#" class="nav__link">privredno pravo</a></li>
+            </ul>
+        </div>
+
     </nav>
     <!-- Nav section ends -->
 
@@ -59,200 +72,175 @@
     <!-- Hero section starts -->
     <section class="hero">
         <div class="hero__wrapper container">
-            <p class="hero__subheading">Tihomir Cvijetić</p>
+            <p class="hero__subheading">Tihomir D. Cvijetić</p>
             <h1 class="hero__heading">advokat beograd</h1>
-            <p class="hero__p">Lawyer can text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy
-                text ever since the whenan.</p>
-            <a href="#" class="hero__btn">zakažite sastanak</a>
+            <p class="hero__p">
+                Svaki slučaj zaslužuje ozbiljan i odgovoran pristup. Iskusno, stručno i posvećeno zastupam vaše interese i tražim najbolje moguće pravno rešenje kako bi pravda uvek bila na Vašoj strani    
+                - <span>„Fiat iustitia – neka bude pravda“</span>
+            </p>
+            <a href="#contact" class="hero__btn">zakažite sastanak</a>
         </div>
     </section>
     <!-- Hero section ends -->
 
 
-
-
-
-    <!-- Services section starts -->
-    <section class="services container" id="services">
-        <h2 class="services__heading">We’r here to help you when you need Any Help</h2>
-        <p class="services__subheading">There are many variations of passages of borem Ipsum available the majority
-            suffered</p>
-
-        <div class="services__wrapper">
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Parnični postupak</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Izvršni postupak</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Porodično i nasledno pravo</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Nepokretnosti</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Naknada štete</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Radno pravo</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Privredno pravo</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Krivićno pravo</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-
-            <article class="services__item">
-                <div class="services__img">
-                    <img src="src/img/services.jpg" alt="">
-                    <div class="services__overlay">
-                        <a href="#" class="services__details">detalji</a>
-                    </div>
-                </div>
-                <div class="services__body">
-                    <h3 class="services__title">Prekršajno pravo</h3>
-                    <p class="services__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta iure
-                        itaque iste aperiam laborum vel…</p>
-                    <a href="#" class="services__link">vidi više</a>
-                </div>
-            </article>
-        </div>
-
-        <a href="#" class="services__btn">view all laws</a>
-    </section>
-    <!-- Services section ends -->
-
-
-
-
     <!-- About section starts -->
-    <section class="about" id="about">
-        <div class="about__wrapper container">
-            <img src="src/img/tuhomir-removebg-preview.png" alt="" class="about__img">
-            <article class="about__item">
-                <h2 class="about__heading">We’re in this together
-                    <span>Your team and ours.</span>
+    <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__wrapper">
+
+                <h2 class="about__heading" id="about-title">O nama:
+                    <span>Reč osnivača</span>
                 </h2>
-                <p class="about__p">Modern orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore
-                    magna aliqua.Ut enim ad minim veniam, quis nos tegrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo
-                    consequat.od magna aliqua veniaullamco laboris.</p>
-            </article>
+                <p class="about__text">
+                    Tihomir Cvijetić rođen je 1993. godine, a 2016. godine diplomirao je na Pravnom fakultetu Univerziteta u Beogradu. Tokom studija bio je nekoliko puta nagrađivan od strane fakulteta za izuzetne akademske uspehe, a takođe je bio dobitnik različitih stipendija.
+                </p>
+                <p class="about__text">
+                    Nakon diplomiranja, profesionalnu karijeru započeo je kao advokatski pripravnik u renomiranoj advokatskoj kancelariji u Beogradu. Po položenom pravosudnom ispitu, nastavio je rad u istoj kancelariji kao advokat saradnik, gde je stekao dragoceno iskustvo zastupajući fizička i pravna lica pred svim sudskim instancama u Republici Srbiji. Dalji profesionalni razvoj nastavio je u advokatskim kancelarijama korporativnog tipa, gde se specijalizovao za pružanje pravnih saveta i zastupanje pravnih lica u različitim granama prava.
+                </p>
+                <p class="about__text">
+                    Stekavši potrebno znanje i iskustvo iz skoro svih oblasti prava, 2024. godine osnovao je svoju advokatsku kancelariju i započeo samostalno bavljenje advokaturom. Njegov rad odlikuju analitičnost, odgovornost i doslednost u zaštiti prava i interesa onih koje zastupa. Sa uverenjem da svaki pravni problem zahteva posebnu posvećenost i preciznost, gradi dugoročne odnose zasnovane na poverenju, profesionalizmu i vrhunskom kvalitetu pravnih usluga. 
+                </p>
+                <p class="about__text">Poseduje sertifikat za zastupanje maloletnih lica.</p>
+                <p class="about__text">Tečno govori engleski jezik, a služi se i francuskim jezikom.</p>
+
+            <img src="src/img/tuhomir-removebg-preview.png" alt="Tihomir Cvijetić - Advokat Beograd" class="about__img">
+
         </div>
     </section>
     <!-- About section ends -->
 
 
+    <!-- Services section starts -->
+    <section class="services container" id="services" aria-labelledby="services-title">
+
+        <!-- Header -->
+        <header class="services__header">
+            <h2 class="services__heading" id="services-title">Pravne oblasti</h2>
+            <p class="services__subheading">There are many variations of passages of borem Ipsum available the majority
+            suffered</p>
+        </header>
+
+
+        <!-- Main -->
+        <main class="services__wrapper">
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services.jpg" alt="Advokat za rešavanje sporova Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Rešavanje sporova</h3>
+                    <p class="services__desc">
+                        Kao advokat sa dugogodišnjim iskustvom u rešavanju sporova, zastupam pravna i fizička lica u svim vrstama sporova, kako sudskim, tako i vansudskim.. 
+                    </p>
+                    <a href="resavanje-sporova.html" class="services__btn" aria-label="Kliknite za više informacija o rešavanju sporova">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services1.jpg" alt="Advokat za izvršni postupak Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Izvršni postupak</h3>
+                    <p class="services__desc">
+                        Izvršni postupak predstavlja pravni mehanizam prinudnog namirenja potraživanja zasnovanih na izvršnim (npr. sudska presuda) i verodostojnim ispravama (npr. faktura).
+                    </p>
+                    <a href="izvrsni-postupak.html" class="services__btn" aria-label="Kliknite za više informacija o izvršnom postupku">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services4.jpg" alt="Advokat za porodično i nasledno pravo Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Porodično i nasledno pravo</h3>
+                    <p class="services__desc">
+                        Porodičnim pravom uređuje se različita pitanja u vezi sa bračnom i vanbračnom zajednicom, odnosima roditelja i dece, izdržavanjem, imovinskim odnosima u bračnoj i vanbračnoj zajednici kao i zaštitom od nasilja u porodici.
+                    </p>
+                    <a href="porodicno-nasledno-pravo.html" class="services__btn" aria-label="Kliknite za više informacija o porodičnom i naslednom pravu">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services2.jpg" alt="Advokat za nepokretnosti Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Nepokretnosti</h3>
+                    <p class="services__desc">
+                        Pravo nepokretnosti obuhvata niz pravnih pitanja koja se odnose na sticanje ili prenos prava svojine na nepokretnostima, zaštitu prava svojine na nepokretnosti, prava službenosti, prava zakupa, ozakonjenja nepokretnosti i drugih prava. 
+                    </p>
+                    <a href="nepokretnosti.html" class="services__btn" aria-label="Kliknite za više informacija o nepokretnostima">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services3.jpg" alt="Advokat za naknadu štete Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Naknada štete</h3>
+                    <p class="services__desc">
+                        Nastanak štete predstavlja našu svakodnevnicu. Bilo da je šteta nastala kao posledica nezakonitog otkaza ugovora o radu, saobraćjne nezgode, povrede ugovora ili drugih razloga, imate pravo da potražujete njenu naknadu.
+                    </p>
+                    <a href="naknada-stete.html" class="services__btn" aria-label="Kliknite za više informacija o naknadi štete">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services.jpg" alt="Advokat za radno pravo Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Radno pravo</h3>
+                    <p class="services__desc">
+                        Radno pravo reguliše prava, obaveze i odgovornosti iz radnog odnosa, odnosno prava i obaveze kako zaposlenih, tako i poslodavca. 
+                    </p>
+                    <a href="radno-pravo.html" class="services__btn" aria-label="Kliknite za više informacija o radnom pravu">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services.jpg" alt="Advokat za privredno pravo Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Privredno pravo</h3>
+                    <p class="services__desc">
+                        Privredno pravo obuhvata sve pravne aspekte poslovanja privrednih društava i preduzetnika, počev od njihovog osnivanja, preko njihovog redovnog obavljanja delatnosti i funkcionisanja, sve do njihovog prestanka.
+                    </p>
+                    <a href="privredno-pravo.html" class="services__btn" aria-label="Kliknite za više informacija o privrednom pravu">vidi više</a>
+                </div>
+            </article>
+
+            <article class="services__item">
+                <div class="services__img">
+                    <img src="src/img/services.jpg" alt="Advokat za krivično i prekršajno pravo Beograd">
+                </div>
+                <div class="services__body">
+                    <h3 class="services__title">Krivično i prekršajno pravo</h3>
+                    <p class="services__desc">
+                        Pokretanje krivičnog ili prekršajnog postupka protiv fizičkog ili pravnog lica može dovesti do različitih pravnih posledica, od velikih novčanih kazni za fizička i pravna lica do lišenja slobode fizičkih lica.
+                    </p>
+                    <a href="krivicno-prekrsajno-pravo.html" class="services__btn" aria-label="Kliknite za više informacija o krivicnom i prekrsajnom pravu">vidi više</a>
+                </div>
+            </article>
+
+        </main>
+    </section>
+    <!-- Services section ends -->
+
+
+    <!-- Contact section starts -->
+
+
+    <!-- Contact section ends -->
+
     <!-- Footer section starts -->
     <footer class="footer">
         <div class="footer__wrapper container">
-            <!-- <article class="footer__item">
-                <h3 class="footer__title">o nama</h3>
-                <p class="footer__desc">Thereare aswrta serttrmany variations of passages of Lorem Ipsum available, but
-                    the majority have suffered setyu..
-                </p>
-                <p class="footer__desc">Thereare aswrta serttrmany variations of passages of Lorem Ipsum available
-                </p>
-            </article> -->
 
             <article class="footer__item">
                 <h3 class="footer__title">kontakt</h3>
@@ -295,6 +283,7 @@
                     <li>
                         <a href="#contact" class="footer__link">kontakt</a>
                     </li>
+                    <li><a href="#services" class="footer__link">usluge</a></li>
                 </ul>
             </article>
 
