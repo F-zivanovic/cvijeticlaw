@@ -61,7 +61,7 @@ a {
 }
 
 .logo {
-  width: 50px;
+  width: 70px;
 }
 
 .nav {
@@ -146,6 +146,11 @@ a {
   font-weight: 800;
   font-size: 3rem;
 }
+.hero__quote {
+  color: #cf9455;
+  font-weight: 700;
+  font-style: italic;
+}
 .hero__p {
   line-height: 1.7;
   color: #fff;
@@ -157,10 +162,6 @@ a {
     margin: 1rem auto;
     max-width: 100%;
   }
-}
-.hero__p span {
-  color: #cf9455;
-  font-weight: 700;
 }
 .hero__btn {
   display: inline-block;

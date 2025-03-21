@@ -28,6 +28,12 @@
         font-size: 3rem;
     }
 
+    &__quote{
+        color: $primary-color;
+        font-weight: 700;
+        font-style: italic;
+    }
+
     &__p{
         line-height: 1.7;
         color: #fff;
@@ -37,11 +43,6 @@
         @include rwd(992){
             margin: 1rem auto;
             max-width: 100%;
-        }
-
-        span{
-            color: $primary-color;
-            font-weight: 700;
         }
     }
 
