@@ -51,7 +51,7 @@ a {
   transition: 0.4s linear;
 }
 a:hover {
-  color: #cf9455;
+  color: #82582b;
 }
 a:focus-visible {
   text-decoration: underline;
@@ -99,7 +99,7 @@ a:focus-visible {
   }
 }
 .nav__info .fa-solid {
-  color: #cf9455;
+  color: #82582b;
   font-size: 0.8rem;
   margin-right: 0.2rem;
 }
@@ -178,7 +178,7 @@ a:focus-visible {
   height: 50vh;
 }
 .hero__subheading {
-  color: #cf9455;
+  color: #82582b;
   text-transform: uppercase;
   font-size: 1.5rem;
 }
@@ -199,7 +199,7 @@ a:focus-visible {
   }
 }
 .hero__quote {
-  color: #cf9455;
+  color: #82582b;
   font-weight: 700;
   font-style: italic;
 }
@@ -221,15 +221,15 @@ a:focus-visible {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
-  background-color: #cf9455;
+  background-color: #82582b;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
-  border: 2px solid #cf9455;
+  border: 2px solid #82582b;
 }
 .hero__btn:hover {
   background-color: transparent;
-  color: #cf9455;
+  color: #82582b;
 }
 
 .about {
@@ -274,7 +274,7 @@ a:focus-visible {
   font-weight: 500;
 }
 .about__heading::after {
-  background-color: #cf9455;
+  background-color: #82582b;
   display: block;
   content: "";
   width: 100px;
@@ -294,7 +294,7 @@ a:focus-visible {
   font-weight: 500;
 }
 .services__heading::after {
-  background-color: #cf9455;
+  background-color: #82582b;
   display: block;
   content: "";
   width: 100px;
@@ -356,15 +356,15 @@ a:focus-visible {
   padding-bottom: 1rem;
 }
 .services__title::after {
-  background-color: #cf9455;
+  background-color: #82582b;
   display: block;
   content: "";
   height: 4px;
   width: 50px;
 }
 .services__btn {
-  border: 2px solid #cf9455;
-  color: #cf9455;
+  border: 2px solid #82582b;
+  color: #82582b;
   margin-top: 1.5rem;
   padding: 0.7rem 1.5rem;
   display: inline-block;
@@ -372,7 +372,7 @@ a:focus-visible {
   text-transform: uppercase;
 }
 .services__btn:hover {
-  background-color: #cf9455;
+  background-color: #82582b;
   color: #fff;
 }
 
@@ -392,7 +392,7 @@ a:focus-visible {
   text-transform: uppercase;
 }
 .contact__heading::after {
-  background-color: #cf9455;
+  background-color: #82582b;
   display: block;
   content: "";
   width: 100px;
@@ -429,12 +429,12 @@ a:focus-visible {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 2rem;
-  background-color: #cf9455;
+  background-color: #82582b;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  border: 2px solid #cf9455;
+  border: 2px solid #82582b;
   transition: 0.4s linear;
 }
 .contact__btn:hover {
@@ -447,7 +447,7 @@ a:focus-visible {
   gap: 0.5rem;
 }
 .contact span {
-  background-color: #cf9455;
+  background-color: #82582b;
   width: 30px;
   height: 30px;
   color: #fff;
@@ -487,7 +487,7 @@ a:focus-visible {
   font-weight: 600;
 }
 .footer__title::after {
-  background-color: #cf9455;
+  background-color: #82582b;
   width: 50px;
   height: 2px;
   content: "";
@@ -507,13 +507,13 @@ a:focus-visible {
   align-items: center;
 }
 .footer__contact:hover {
-  color: #cf9455;
+  color: #82582b;
 }
 .footer__contact:not(:first-child) {
   margin-top: 1rem;
 }
 .footer__contact .fa-solid, .footer__contact .fa-brands {
-  color: #cf9455;
+  color: #82582b;
   font-size: 1.1rem;
   margin-right: 1.1rem;
 }
