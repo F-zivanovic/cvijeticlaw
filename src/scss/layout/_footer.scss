@@ -7,7 +7,6 @@ $footer-text-color:#c4c4c4;
     padding-top: 70px;
     background-color: #000;
 
-
     &__wrapper{
         @include flex(space-between, stretch, wrap);
         row-gap: 2rem;
@@ -39,27 +38,23 @@ $footer-text-color:#c4c4c4;
         color: $footer-text-color;
         display: block;
         font-size: 0.9rem;
+        display: flex;
+        align-items: center;
 
         &:hover{ color: $primary-color; }
 
         &:not(:first-child){ margin-top: 1rem; }
 
         .fa-solid, .fa-brands {
+            color: $primary-color;
             font-size: 1.1rem;
             margin-right: 1.1rem;
-            color: $primary-color;
         }
     }
 
-    &__links,
     &__list { @include flex(flex-start, stretch, column, 0.5rem); }
 
-    &__link{
-        color: $footer-text-color;
-        text-transform: capitalize;
-
-        &:hover{ color: $primary-color; }
-    }
+    &__link{ color: $footer-text-color; }
 
     &__list__item{
         display: flex;
@@ -76,15 +71,6 @@ $footer-text-color:#c4c4c4;
          @include rwd(576){
             flex-direction: column;
             gap: 1rem;
-        }
-
-        a{
-            color: $footer-text-color;
-            text-decoration: underline;
-
-            &:hover{
-                color: $primary-color;
-            }
         }
     }
 }

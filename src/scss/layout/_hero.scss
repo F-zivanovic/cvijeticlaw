@@ -4,13 +4,14 @@
 .hero{
     @include flex(flex-start, center, column);
     padding: 0;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../src/img/hero.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../src/img/hero.webp');
     background-size: cover;
+    background-position: center;
     height: 90vh;
 
     @include rwd(992){
         justify-content: center;
-        text-align: center;
+        text-align: center; 
     }
 
     &--sm{ height: 50vh; }
@@ -26,6 +27,12 @@
         text-transform: uppercase;
         font-weight: 800;
         font-size: 3rem;
+
+        @include rwd(768){ font-size: 2.5rem; }
+
+        &--sm{
+            @include rwd(576){ font-size: 2rem; }
+        }
     }
 
     &__quote{
@@ -34,7 +41,7 @@
         font-style: italic;
     }
 
-    &__p{
+    &__text{
         line-height: 1.7;
         color: #fff;
         max-width: 550px;
@@ -44,6 +51,7 @@
         @include rwd(992){
             margin: 1rem auto;
             max-width: 100%;
+            text-align: center;
         }
     }
 
@@ -55,10 +63,11 @@
         color: #fff;
         text-transform: uppercase;
         font-weight: 600;
+        border: 2px solid $primary-color;
 
         &:hover{
-            opacity: 0.7;
+            background-color: transparent;
+            color: $primary-color;
         }
     }
-
 }

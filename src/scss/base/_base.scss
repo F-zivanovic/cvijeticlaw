@@ -39,10 +39,16 @@ img {
   vertical-align: middle;
 }
 
-section {
-  padding: 70px 0;
-}
+section { padding: 70px 0; }
 
 a {
+  color: $text-color;
   transition: 0.4s linear;
+
+  &:hover{ color: $primary-color; }
+
+  &:focus-visible {
+    text-decoration: underline;
+    outline: 2px dashed $text-color;
+  }
 }

@@ -1,7 +1,7 @@
 @use '../abstract/index' as *;
 
 .about{
-    background-image: url('../../src/img/about-bg.jpg');
+    background-image: url('../../src/img/about-bg.webp');
     background-position: center;
     background-size: cover;
     padding: 100px 0;
@@ -10,25 +10,29 @@
     &__wrapper{
         max-width: 60%;
         margin: 0 auto;
-    }
 
+        @include rwd(768){ max-width: 90%;}
+    }
 
     &__img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        @include position(absolute, auto, 0, 0, auto, 500px, 500px);
         opacity: 0.75;
         z-index: 0;
-    }
 
+        @include rwd(992){ opacity: 0.55; }
+        @include rwd(576){ display: none;; }
+    }
 
     &__heading{
         font-size: 2.5rem;
         font-weight: 500;
-        margin-bottom: 1rem;
 
-        span{
-            color: $primary-color;
+        &::after{
+            background-color: $primary-color;
+            display: block;
+            content: "";
+            width: 100px;
+            height: 2px;
         }
     }
 
@@ -37,10 +41,7 @@
         position: relative;
         z-index: 100;
         text-align: justify;
-        font-weight: 500;
-
-        &:not(:last-child){
-            margin-bottom: 1rem;
-        }
+        font-weight: 600;
+        margin-top: 1rem;      
     }
 }
