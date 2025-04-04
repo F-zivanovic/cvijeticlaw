@@ -41,9 +41,7 @@
             height: 200px;
         } 
 
-        @include rwd(400){
-            width: 250px;
-        }
+        @include rwd(400){ width: 250px; }
 
        img{
         height:200px;

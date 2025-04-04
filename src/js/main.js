@@ -20,6 +20,5 @@ window.addEventListener('resize', () => {
     }
 });
 
-
 // Dynamic date
 document.getElementById("year").textContent = new Date().getFullYear();

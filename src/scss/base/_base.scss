@@ -43,6 +43,7 @@ section { padding: 70px 0; }
 
 a {
   color: $text-color;
+  
   transition: 0.4s linear;
 
   &:hover{ color: $primary-color; }
